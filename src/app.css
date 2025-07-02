@@ -1,0 +1,148 @@
+  body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: #f7f9fc;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  #chat-container {
+    width: 500px;
+    height: 727px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  #chat {
+    flex-grow: 1;
+    padding: 15px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .message {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .message.self {
+    flex-direction: row-reverse;
+  }
+
+  .avatar {
+    width: 40px;
+    height: 40px;
+    background: #ccc;
+    border-radius: 50%;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+  }
+
+  .message.self .avatar {
+    background: #007aff;
+  }
+
+.message .text {
+  position: relative;
+  max-width: 70%;
+  background: #e4e6eb;
+  border-radius: 15px;
+  padding: 10px 45px 18px 15px;
+  font-size: 15px;
+  line-height: 1.4;
+  color: #050505;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 0.1);
+  word-wrap: break-word;
+}
+
+.message.self .text {
+  background: #007aff;
+  color: white;
+}
+
+.message .time {
+  position: absolute;
+  bottom: 6px;
+  right: 10px;
+  font-size: 11px;
+  color: #555;
+  opacity: 0.7;
+}
+
+
+
+  #input-area {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    border-top: 1px solid #ddd;
+    gap: 10px;
+    background: #fafafa;
+  }
+
+  #usernameInput {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+
+  #messageInput {
+    flex-grow: 1;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+
+  #sendBtn {
+    background: #007aff;
+    border: none;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+
+  #sendBtn:hover:not(:disabled) {
+    background: #005bb5;
+  }
+
+  #sendBtn:disabled {
+    background: #a0cfff;
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+
+  #typingIndicator {
+    height: 20px;
+    padding-left: 15px;
+    font-style: italic;
+    color: #666;
+    font-size: 14px;
+    background: #fafafa;
+  }
+  #scheduleTime {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+#fileInput {
+  padding: 5px;
+  font-size: 14px;
+}

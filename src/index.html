@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Telegram uslubidagi chat + Typing indikator</title>
+<link rel="stylesheet" href="app.css">
+<link rel="icon" href="data:;base64,=">
+
+</head>
+<body>
+
+<div id="chat-container">
+  <div id="chat"></div>
+  <div id="typingIndicator"></div>
+  <div id="input-area">
+    <input type="text" id="usernameInput" placeholder="Ismingiz" />
+    <input type="text" id="messageInput" placeholder="Xabar yozing..." disabled />
+    <input type="datetime-local" id="scheduleTime" placeholder="Yuborish vaqti ixtiyoriy"/>
+    <input type="file" id="fileInput" />
+    <div id="chat" class="chat" style="border: 1px solid gray; height: 1px; overflow-y: auto; display: none;">
+         <div id="dropzone" style="display: inherit;">Drag and drop a file here</div>
+</div>
+
+    <button id="sendBtn" disabled>Yuborish</button>
+  </div>
+</div>
+
+<script src="./client.js">
+
+
+</script>
+
+
+
+</body>
+</html>
