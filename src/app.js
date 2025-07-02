@@ -1,7 +1,7 @@
 import { WebSocketServer } from "ws";
 const server = new WebSocketServer({ port: 8080 });
 
-const clients = new Map(); // ws => username
+const clients = new Map(); 
 const usernames = new Set();
 
 server.on('connection', (ws) => {
